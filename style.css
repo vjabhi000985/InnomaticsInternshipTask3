@@ -1,0 +1,98 @@
+*{
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+/*Grid Laypout*/
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.5fr 1.7fr 0.4fr 2fr;
+  grid-template-areas:  
+    "navbar navbar navbar"
+    "header header header"
+    "feature-1 feature-2 feature-3"
+    "signup signup signup"
+    "content content content";
+  grid-gap: 0.2rem;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;                    
+}
+
+nav{
+  background-color: rgb(33, 117, 234);
+  grid-area: navbar;
+}
+
+header{
+  background-color: aqua;
+  grid-area: header;
+}
+
+.feature-1{
+  background-color: rgb(237, 232, 82);
+  grid-area: feature-1;
+}
+
+.feature-2{
+  background-color: red;
+  grid-area: feature-2;
+}
+
+.feature-3{
+  background-color: purple;
+  grid-area: feature-3;
+}
+
+.sign-up{
+  background-color: rgb(94, 239, 239);
+  grid-area: signup;
+}
+
+.content{
+  background-color: rgb(196, 192, 192);
+  grid-area: content;
+}
+
+/* Media Queries for Various Devices*/
+/*Tablet view*/
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1.5fr 1fr 1fr;
+    grid-template-areas:
+      "navbar navbar" 
+      "header header"
+      "content content"
+      "signup feature-1"
+      "feature-2 feature-3";
+    grid-gap: 0.2rem;
+    font-size: 1rem;
+  }
+}
+
+/*Mobile view*/
+@media (max-width: 425px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1.5fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    grid-template-areas:
+      "navbar" 
+      "header"
+      "content"
+      "signup"
+      "feature-1"
+      "feature-2"
+      "feature-3";
+    grid-gap: 0.2rem;
+    font-size: 0.9rem;
+  }
+}
