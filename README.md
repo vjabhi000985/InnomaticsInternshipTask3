@@ -32,7 +32,7 @@ The webpage is structured using CSS Grid to create a clean, responsive layout. T
   font-size: 1.3rem;                    
 }
 ```
-1. Mobile (up to 425px): Elements are displayed in a vertical single-column format for easy scrolling on small screens.
+2. Mobile (up to 425px): Elements are displayed in a vertical single-column format for easy scrolling on small screens.
 ```css
 @media (max-width: 425px) {
   .container {
@@ -73,3 +73,7 @@ The webpage is structured using CSS Grid to create a clean, responsive layout. T
   }
 }
 ```
+### Demo:
+![ezgif-7-913202cd61](https://github.com/user-attachments/assets/cbe1d862-e1b2-4b0d-af86-a230f28e8a1a)
+
+### ```Deployment URL```:
